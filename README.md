@@ -15,3 +15,7 @@ Client #2:
 
 Client #3:
 ![](assets/2.1-client3.png)
+
+## 2.2. Modifying the websocket port
+
+Jika kita melihat ke dalam `server.rs`, terlihat bahwa tidak perlu menginisiasi koneksi WebSocket karena perannya sebagai server. Server hanya perlu mengikat alamat dan menunggu koneksi yang masuk. Koneksi WebSocket diinisasi klien. Selanjutnya, server menerima koneksi yang masuk dan mengelola pesan-pesan yang disampaikan.
